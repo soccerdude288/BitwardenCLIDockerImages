@@ -1,0 +1,5 @@
+FROM node
+
+RUN npm install -g @bitwarden/cli
+
+ENTRYPOINT [ "/usr/local/bin/bw" ]
